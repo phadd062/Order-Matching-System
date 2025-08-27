@@ -121,7 +121,71 @@ const AccordionOrderForm = ({ fetchOrders }: { fetchOrders: () => void }) => {
 					</Accordion.Item>
 					<Accordion.Item onClick={clickedAccordionTwo} eventKey={EVENTKEYTWO}>
 						<Accordion.Header>Example/Instructions/About</Accordion.Header>
-						<Accordion.Body>Form goes here</Accordion.Body>
+						<Accordion.Body>
+							<>
+								<h4>How to Use the Order Matching System</h4>
+								<section className="mt-3">
+									<p className="mb-2">
+										1. <span className="fw-bold">Create an Order:</span> Use the
+										Create Order form at the top of the page.
+									</p>
+									<ul>
+										<li>
+											<span className="fw-bold">Price: </span> Enter the price
+											at which you want to buy or sell.
+										</li>
+										<li>
+											<span className="fw-bold">Quantity:</span> Specify how
+											many units you want to trade.
+										</li>
+										<li>
+											<span className="fw-bold">Type:</span> Choose either Buy
+											or Sell.
+										</li>
+										<li>
+											Click <span className="fw-bold">Submit Order</span> to add
+											your order to the orderbook.
+										</li>
+									</ul>
+								</section>
+								<section className="mt-3">
+									<p className="mb-2">
+										2. <span className="fw-bold">View the Orderbook:</span> The
+										orderbook is divided into two sections.
+									</p>
+									<ul>
+										<li>
+											<span className="fw-bold">Bid (Buy Orders):</span> Sorted
+											by highest price first.
+										</li>
+										<li>
+											<span className="fw-bold">Ask (Sell Orders):</span> Sorted
+											by lowest price first.
+										</li>
+									</ul>
+								</section>
+								<section className="mt-3">
+									<p className="mb-2">
+										3. <span className="fw-bold">Automatic Matching:</span> When
+										a buy and sell order have matching prices.
+									</p>
+									<ul>
+										<li>The system automatically executes the trade.</li>
+										<li>
+											The system moves the matched orders to the Filled Orders
+											section.
+										</li>
+									</ul>
+								</section>
+								<section className="mt-3">
+									<p className="mb-2">
+										4. <span className="fw-bold">Reset the Orderbook:</span> Use
+										the Reset Data button in the top-right corner to clear all
+										data and start fresh.
+									</p>
+								</section>
+							</>
+						</Accordion.Body>
 					</Accordion.Item>
 				</Accordion>
 			</Col>

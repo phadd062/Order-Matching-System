@@ -11,7 +11,7 @@ import "ag-grid-community/styles/ag-theme-alpine.css";
 import Sidebar from "./Sidebar";
 import { useEffect } from "react";
 import Orderbook from "../orderbook/Orderbook";
-import Add from "pages/instruction/Add";
+import About from "pages/instruction/About";
 
 const RoutesComponent = () => {
 	const { isLoadingGlobal, isHeaderSidebarHidden, setIsLoadingGlobalSpecific } =
@@ -35,7 +35,7 @@ const RoutesComponent = () => {
 							<Routes>
 								<Route path="*" element={<Navigate to="/orders" />} />
 								<Route path="orders" element={<Orderbook />} />
-								<Route path="about" element={<Add />} />
+								<Route path="about" element={<About />} />
 							</Routes>
 						</main>
 					</div>
