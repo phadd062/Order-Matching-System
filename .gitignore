@@ -3,3 +3,5 @@ target/
 .idea
 dist/
 node_modules/
+backend/.idea/workspace.xml
+backend/.idea/
